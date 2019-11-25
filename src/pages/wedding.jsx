@@ -68,7 +68,7 @@ export default class Wedding extends React.Component{
             
 	  <section id="home" className="video-hero js-fullheight" style={{"height": "700px", "backgroundImage": `url(${'public/images/bg_1.jpg'})`, "backgroundSize":"cover", "backgroundPosition": "top center"}} data-stellar-background-ratio="0.5">
 	  	<div className="overlay"></div>
-			<a className="player" data-property="{videoURL:'https://www.youtube.com/watch?v=Mjjw19B7rMk',containment:'#home', showControls:false, autoPlay:true, loop:true, mute:true, startAt:0, opacity:1, quality:'default',optimizeDisplay:true}"></a>
+			<a className="player" data-property="{videoURL:'https://www.youtube.com/watch?v=Mjjw19B7rMk',containment:'#home', showControls:false, autoPlay:true, loop:true, mute:false, startAt:0, opacity:1, quality:'default',optimizeDisplay:true}"></a>
 			<div className="container">
 				<div className="row js-fullheight justify-content-center d-flex align-items-center">
 					<div className="col-md-12">
