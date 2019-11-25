@@ -420,7 +420,7 @@ export default class Wedding extends React.Component{
         </div>
         <div className="row">
         	<div className="col-md-4 ftco-animate">
-        		<div className="place img" style={{"background-image": `url(${'public/images/place-1.jpg'})`}}>
+        		<div className="place img" style={{"backgroundImage": `url(${'public/images/place-1.jpg'})`}}>
         			<div className="text text-center">
 	        			<span className="icon flaticon-reception-bell"></span>
 	        			<h3>The Reception</h3>
@@ -432,7 +432,7 @@ export default class Wedding extends React.Component{
         		</div>
         	</div>
         	<div className="col-md-4 ftco-animate">
-        		<div className="place img" style={{"background-image": `url(${'public/images/place-2.jpg'})`}}>
+        		<div className="place img" style={{"backgroundImage": `url(${'public/images/place-2.jpg'})`}}>
         			<div className="text text-center">
 	        			<span className="icon flaticon-wedding-kiss"></span>
 	        			<h3>The Ceremony</h3>
@@ -444,7 +444,7 @@ export default class Wedding extends React.Component{
         		</div>
         	</div>
         	<div className="col-md-4 ftco-animate">
-        		<div className="place img" style={{"background-image": `url(${'public/images/place-3.jpg'})`}}>
+        		<div className="place img" style={{"backgroundImage": `url(${'public/images/place-3.jpg'})`}}>
         			<div className="text text-center">
 	        			<span className="icon flaticon-cake"></span>
 	        			<h3>The Party</h3>
