@@ -1,11 +1,12 @@
 {
-  "homepage" : "https://sankalpsingh2704.github.io/WeddingSaga/",
+  "homepage": "https://sankalpsingh2704.github.io/WeddingSaga/",
   "name": "webpackproject",
   "version": "1.0.0",
   "description": "Webpack Solution",
   "main": "webpack.config.js",
   "scripts": {
     "start": "webpack-dev-server --color --open",
+    "build": "webpack -p",
     "deploy": "gh-pages -d build"
   },
   "author": "sankalpn27@live.com",
@@ -17,6 +18,7 @@
     "@babel/preset-react": "^7.7.0",
     "babel-loader": "^8.0.6",
     "css-loader": "^3.2.0",
+    "gh-pages": "^2.1.1",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.9.0"
