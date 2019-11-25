@@ -12,7 +12,7 @@ import ErrorBoundary from './common/ErrorBoundary.jsx';
 
 const root = document.getElementById('root');
 const store = createStore(reducer,applyMiddleware(thunk,logger,custommiddleware));
-
+console.log(process.env.PUBLIC_URL);
 ReactDOM.render(
     <ErrorBoundary>
         <Provider store={store}>
