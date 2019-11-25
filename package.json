@@ -4,7 +4,8 @@
   "description": "Webpack Solution",
   "main": "webpack.config.js",
   "scripts": {
-    "start": "webpack-dev-server --color --open"
+    "start": "webpack-dev-server --color --open",
+    "deploy": "gh-pages -d build"
   },
   "author": "sankalpn27@live.com",
   "license": "MIT",
@@ -30,5 +31,6 @@
     "redux-logger": "^3.0.6",
     "redux-saga": "^1.1.3",
     "redux-thunk": "^2.3.0"
-  }
+  },
+  "homepage" : "https://sankalpsingh2704.github.io/WeddingSaga/"
 }
