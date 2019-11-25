@@ -26,7 +26,7 @@ const routes = [
         path: null,
         name:"Not Found",
         exact: true,
-        component: PageNotFound
+        component: Wedding
     }
 ];
 

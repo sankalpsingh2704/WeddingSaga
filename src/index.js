@@ -12,12 +12,11 @@ import ErrorBoundary from './common/ErrorBoundary.jsx';
 
 const root = document.getElementById('root');
 const store = createStore(reducer,applyMiddleware(thunk,logger,custommiddleware));
-console.log(process.env.PUBLIC_URL);
-console.log(Routes);
+
 ReactDOM.render(
     <ErrorBoundary>
         <Provider store={store}>
-            <Router basename={"https://sankalpsingh2704.github.io/WeddingSaga/"}>
+            <Router basename={process.env.PUBLIC_URL}>
                 <Switch>
                     {
                         Routes.map((props,key)=> 
