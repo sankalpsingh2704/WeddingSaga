@@ -16,7 +16,7 @@ console.log(process.env.PUBLIC_URL);
 ReactDOM.render(
     <ErrorBoundary>
         <Provider store={store}>
-            <Router basename={process.env.PUBLIC_URL}>
+            <Router basename={"https://sankalpsingh2704.github.io/WeddingSaga/"}>
                 <Switch>
                     {
                         Routes.map((props,key)=> 
