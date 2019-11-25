@@ -1,0 +1,2 @@
+export const REQUESTLOGIN = "REQUESTLOGIN";
+export const RESULTLOGIN = "RESULTLOGIN";
