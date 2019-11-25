@@ -16,7 +16,7 @@ const store = createStore(reducer,applyMiddleware(thunk,logger,custommiddleware)
 ReactDOM.render(
     <ErrorBoundary>
         <Provider store={store}>
-            <Router>
+            <Router basename={process.env.PUBLIC_URL}>
                 <Switch>
                     {
                         Routes.map((props,key)=> 
