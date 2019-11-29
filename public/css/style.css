@@ -8882,8 +8882,10 @@ textarea.form-control {
       text-transform: uppercase;
       font-size: 12px;
       font-weight: 600;
+      cursor: pointer;
       letter-spacing: 1px;
       border: 1px solid #fddddc;
+      color: #f67e7d;
       padding: 8px 10px; }
 
 .rsvp-form {
