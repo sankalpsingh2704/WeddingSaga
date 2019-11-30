@@ -170,7 +170,7 @@ export default class Wedding extends React.Component {
 
 				<section id="home" className="video-hero js-fullheight" style={{ "height": "700px", "backgroundImage": `url(${'public/images/bg_1.jpg'})`, "backgroundSize": "cover", "backgroundPosition": "top center" }} data-stellar-background-ratio="0.5">
 					<div className="overlay"></div>
-					<a className="player" data-property="{videoURL:'https://www.youtube.com/watch?v=Mjjw19B7rMk',containment:'#home', showControls:false, autoPlay:true, loop:true, mute:false, startAt:0, opacity:1, quality:'default',optimizeDisplay:true}"></a>
+					<a className="player" data-property="{videoURL:'https://www.youtube.com/watch?v=Mjjw19B7rMk?rel=0&modestbranding=1&autohide=1&showinfo=0&controls=0&&showinfo=0',containment:'#home', showControls:false, autoPlay:true, loop:true, mute:false, startAt:0, opacity:1, quality:'default',optimizeDisplay:true}"></a>
 					<div className="container">
 						<div className="row js-fullheight justify-content-center d-flex align-items-center">
 							<div className="col-md-12">
@@ -448,9 +448,9 @@ export default class Wedding extends React.Component {
 									<h2 className="ftco-heading-2">Wedding</h2>
 									<p>Far far away, behind the word mountains, far from the countries.</p>
 									<ul className="ftco-footer-social list-unstyled mt-5">
-										<li className="ftco-animate"><a href="#"><span className="icon-twitter"></span></a></li>
-										<li className="ftco-animate"><a href="#"><span className="icon-facebook"></span></a></li>
-										<li className="ftco-animate"><a href="#"><span className="icon-instagram"></span></a></li>
+										<li className="ftco-animate"><a href="https://twitter.com/sankalp_27" target="_blank"><span className="icon-twitter"></span></a></li>
+										<li className="ftco-animate"><a href="https://www.facebook.com/sankalptechno" target="_blank"><span className="icon-facebook"></span></a></li>
+										<li className="ftco-animate"><a href="https://www.instagram.com/lifeofsankalp/" target="_blank"><span className="icon-instagram"></span></a></li>
 									</ul>
 								</div>
 							</div>
