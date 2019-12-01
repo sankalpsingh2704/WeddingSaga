@@ -68,7 +68,7 @@ export default class Wedding extends React.Component {
 													<div className="text">
 														<p className="mb-4">{x.Message}</p>
 														<div className="d-flex align-items-center">
-															<div className="user-img" style={{ "backgroundImage": `url(${'public/images/'+x.Photo})` }}></div>
+															<div className="user-img" style={{ "backgroundImage": `url(${'public/images/' + x.Photo})` }}></div>
 															<div className="pl-3">
 																<p className="name">{x.Name}</p>
 																<span className="position">{x.Position}</span>
@@ -77,7 +77,7 @@ export default class Wedding extends React.Component {
 													</div>
 												</div>
 											</div>
-											)
+										)
 									})
 								}
 
@@ -90,11 +90,11 @@ export default class Wedding extends React.Component {
 	}
 	familyAndFriends = _ => {
 		const peoples = [
-			{ Name: "Mark Tomy", Type: "Groomsmen", Photo: "groom-men-1.jpg" },
-			{ Name: "John Henceworth", Type: "Groomsmen", Photo: "groom-men-2.jpg" },
-			{ Name: "Rey Cooper", Type: "Groomsmen", Photo: "groom-men-3.jpg" },
-			{ Name: "Robert Chan", Type: "Groomsmen", Photo: "groom-men-4.jpg" },
-			{ Name: "Rose Jones", Type: "Bridesmaid", Photo: "bridesmaid-1.jpg" },
+			{ Name: "Roli, Sakshi", Type: "Groomsmen", Photo: "rols.jpg" },
+			{ Name: "Akanksha", Type: "Groomsmen", Photo: "akanksha.jpg" },
+			{ Name: "Rahul", Type: "Groomsmen", Photo: "rahul.jpg" },
+			{ Name: "Ankur", Type: "Groomsmen", Photo: "ankur.jpg" },
+			{ Name: "", Type: "Bridesmaid", Photo: "bridesmaid-1.jpg" },
 			{ Name: "Mary Dell", Type: "Bridesmaid", Photo: "bridesmaid-2.jpg" },
 			{ Name: "Alicia Brean", Type: "Bridesmaid", Photo: "bridesmaid-3.jpg" },
 			{ Name: "Angel Worth", Type: "Bridesmaid", Photo: "bridesmaid-4.jpg" }
@@ -170,7 +170,8 @@ export default class Wedding extends React.Component {
 
 				<section id="home" className="video-hero js-fullheight" style={{ "height": "700px", "backgroundImage": `url(${'public/images/bg_1.jpg'})`, "backgroundSize": "cover", "backgroundPosition": "top center" }} data-stellar-background-ratio="0.5">
 					<div className="overlay"></div>
-					<a className="player" data-property="{videoURL:'https://www.youtube.com/watch?v=Mjjw19B7rMk?rel=0&modestbranding=1&autohide=1&showinfo=0&controls=0&&showinfo=0',containment:'#home', showControls:false, autoPlay:true, loop:true, mute:false, startAt:0, opacity:1, quality:'default',optimizeDisplay:true}"></a>
+					<a className="player" data-property="{videoURL:'https://www.youtube.com/watch?v=Mjjw19B7rMk?rel=0&modestbranding=1&autohide=1&showinfo=0&controls=0&showinfo=0',containment:'#home', showControls:false, autoPlay:true, loop:true, mute:true, startAt:0, opacity:1, quality:'default',optimizeDisplay:true}"></a>
+					<a className="player" style={{display: "none"}} data-property="{videoURL:'https://youtu.be/49ipG99rR5w?rel=0&modestbranding=1&autohide=1&showinfo=0&controls=0&showinfo=0',containment:'#home', showControls:false, autoPlay:true, loop:true, mute:false, startAt:0, opacity:1, quality:'default',optimizeDisplay:true}"></a>
 					<div className="container">
 						<div className="row js-fullheight justify-content-center d-flex align-items-center">
 							<div className="col-md-12">
@@ -281,11 +282,11 @@ export default class Wedding extends React.Component {
 										<div className="timeline-panel ftco-animate text-md-right">
 											<div className="overlay"></div>
 											<div className="timeline-heading">
-												<span className="date">June 10, 2017</span>
+												<span className="date">April 27, 2019</span>
 												<h3 className="timeline-title">First We Meet</h3>
 											</div>
 											<div className="timeline-body">
-												<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in .</p>
+												<p>Some people meet online, others through friends, some at work, and a handful during college but ours is like MOM DAD NE BANA DI JODI. Far far away, from the state of UP and CG, journey begins with meeting as a stranger to feeling like a SOUL MATE.</p>
 											</div>
 										</div>
 									</li>
@@ -294,11 +295,11 @@ export default class Wedding extends React.Component {
 										<div className="timeline-panel ftco-animate">
 											<div className="overlay overlay-2"></div>
 											<div className="timeline-heading">
-												<span className="date">June 10, 2017</span>
+												<span className="date">July 13, 2019</span>
 												<h3 className="timeline-title">First Date</h3>
 											</div>
 											<div className="timeline-body">
-												<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in .</p>
+												<p>This was elegant second meet to know more and express more. The perfect date in which everything was surprised and different, but at the end of it, all you want is to see them again .</p>
 											</div>
 										</div>
 									</li>
@@ -307,7 +308,7 @@ export default class Wedding extends React.Component {
 										<div className="timeline-panel ftco-animate text-md-right">
 											<div className="overlay"></div>
 											<div className="timeline-heading">
-												<span className="date">June 14, 2017</span>
+												<span className="date">September. 29, 2019</span>
 												<h3 className="timeline-title">In A Relationship</h3>
 											</div>
 											<div className="timeline-body">
@@ -320,11 +321,11 @@ export default class Wedding extends React.Component {
 										<div className="timeline-panel ftco-animate">
 											<div className="overlay overlay-2"></div>
 											<div className="timeline-heading">
-												<span className="date">May. 10, 2019</span>
+												<span className="date">March 1, 2020</span>
 												<h3 className="timeline-title">We're Engaged</h3>
 											</div>
 											<div className="timeline-body">
-												<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in .</p>
+												<p>Love is just a word until someone comes along and gives it meaning. So this is the day we are waiting to cherish our whole life. A journey from courtship to tying a knot to start a new life .</p>
 											</div>
 										</div>
 									</li>
