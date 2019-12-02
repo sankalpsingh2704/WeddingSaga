@@ -70,10 +70,14 @@
             navigator.serviceWorker.register('/WeddingSaga/serviceWorker.js').then(function (registration) {
                 Notification.requestPermission(function(status) {
                     console.log('Notification permission status:', status);
-                });                
-               var t = setTimeout(()=> {
-                    displayNotification();
-                    clearTimeout(t);
+                });         
+                let i = -1;
+                messageArray = ["Get Your Tickets Ready"," Prepare dance for Sankalp's Wedding "," Do get your shopping"];
+                var t = setTimeout(()=> {
+                    i++;
+                    displayNotification(messageArray[i]);
+                    if(i == 2)
+                        clearTimeout(t);
                 },3000)
                 // Registration was successful
                 console.log('ServiceWorker registration successful with scope: ', registration.scope);
@@ -83,15 +87,7 @@
             });
         });
     }
-    
-    function displayNotification() {
-    if (Notification.permission == 'granted') {
-        navigator.serviceWorker.getRegistration().then(function(reg) {
-            reg.showNotification('Hello world!');
-            });
-        }
-    }
-    
+
     window.addEventListener('appinstalled', (evt) => {
         console.log('a2hs installed');
     });
