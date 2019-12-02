@@ -16,6 +16,6 @@
     "start_url": "/WeddingSaga?source=pwa",
     "background_color": "#f67e7d",
     "display": "standalone",
-    "scope": "https://sankalpsingh2704.github.io/WeddingSaga/public/js/",
+    "scope": "/WeddingSaga/*",
     "theme_color": "#f67e7d"
   }
