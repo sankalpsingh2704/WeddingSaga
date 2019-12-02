@@ -1,7 +1,7 @@
 var CACHE_NAME = 'my-site-cache-v1';
 var urlsToCache = [
-  '/',
-  '/public/js/main.js'
+  '/WeddingSaga',
+  '/WeddingSaga/public/js/main.js'
 ];
 
 self.addEventListener('install', function(event) {
