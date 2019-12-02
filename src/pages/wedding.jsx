@@ -392,7 +392,7 @@ export default class Wedding extends React.Component {
 						<div className="row justify-content-center pb-5">
 							<div className="col-md-12 text-center heading-section ftco-animate">
 								<span className="clone"></span>
-								<h2 className="mb-3">Are Your Attending?</h2>
+								<h2 className="mb-3">Are You Attending?</h2>
 							</div>
 						</div>
 						<div className="row justify-content-center">
