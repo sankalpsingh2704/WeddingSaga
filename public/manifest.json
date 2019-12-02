@@ -13,7 +13,7 @@
         "sizes": "512x512"
       }
     ],
-    "start_url": "/WeddingSaga?source=pwa",
+    "start_url": "/WeddingSaga/index.html",
     "background_color": "#f67e7d",
     "display": "standalone",
     "scope": "/WeddingSaga/*",
