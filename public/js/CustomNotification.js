@@ -5,7 +5,7 @@ function displayNotification(messg) {
             });
         }
 	}
-function GetMessage(){
+function getMessage(){
 	return {
 		message: "Get Your Train Tickets Ready"
 	}
