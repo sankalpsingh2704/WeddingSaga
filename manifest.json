@@ -3,12 +3,12 @@
     "name": "Wedding - Sankalp and Khushbu",
     "icons": [
       {
-        "src": "images/fevicon_png.png",
+        "src": "public/images/fevicon_png.png",
         "type": "image/png",
         "sizes": "192x192"
       },
       {
-        "src": "images/fevicon_png.png",
+        "src": "public/images/fevicon_png.png",
         "type": "image/png",
         "sizes": "512x512"
       }
