@@ -7,6 +7,6 @@ function displayNotification(messg) {
 	}
 function getMessage(){
 	return {
-		message: "Get Your Train Tickets Ready"
+		message: "Get Your Train Tickets Ready for Sankalp and Khushbu Wedding !"
 	}
 }
