@@ -55,6 +55,7 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
     <script src="dist/my-first-webpack.bundle.js"></script>
     <script src="public/js/bootstrap.min.js"></script>
+    <script src="public/js/CustomNotification.js"></script>
     <script src="public/js/main.js"></script>
 </body>
 <script>
@@ -71,14 +72,14 @@
                 Notification.requestPermission(function(status) {
                     console.log('Notification permission status:', status);
                 });         
-                let i = -1;
-                messageArray = ["Get Your Tickets Ready"," Prepare dance for Sankalp's Wedding "," Do get your shopping"];
+                
                 var t = setTimeout(()=> {
-                    i++;
-                    displayNotification(messageArray[i]);
-                    if(i == 2)
-                        clearTimeout(t);
-                },3000)
+                    if(getMessage().message != "")
+                    {
+                        displayNotification(getMessage().message);
+                    }   
+                    clearTimeout(t);
+                },15000)
                 // Registration was successful
                 console.log('ServiceWorker registration successful with scope: ', registration.scope);
             }, function (err) {

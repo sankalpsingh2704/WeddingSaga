@@ -336,11 +336,3 @@ setInterval(function() { makeTimer(); }, 1000);
 	
 })(jQuery);
 
-function displayNotification(messg) {
-    if (Notification.permission == 'granted') {
-        navigator.serviceWorker.getRegistration().then(function(reg) {
-            reg.showNotification(messg);
-            });
-        }
-	}
-
