@@ -68,6 +68,7 @@
     if ('serviceWorker' in navigator) {
         window.addEventListener('load', function () {
             navigator.serviceWorker.register('/WeddingSaga/serviceWorker.js').then(function (registration) {
+                registration.showNotification("Welcome to Sankalp's Wedding");
                 // Registration was successful
                 console.log('ServiceWorker registration successful with scope: ', registration.scope);
             }, function (err) {
