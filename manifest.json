@@ -16,6 +16,6 @@
     "start_url": "/WeddingSaga/index.html",
     "background_color": "#f67e7d",
     "display": "standalone",
-    "scope": "/*",
+    "scope": "/",
     "theme_color": "#f67e7d"
   }

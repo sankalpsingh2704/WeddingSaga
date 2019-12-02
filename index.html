@@ -13,7 +13,7 @@
     <meta property="og:image:secure_url" content="https://sankalpsingh2704.github.io/WeddingSaga/public/images/fevicon_png.png" />
     <meta property="og:image:type" content="image/png" />
     <meta name="description" content="Wedding - Sankalp & Khushbu">
-    <link rel="manifest" href="./public/manifest.json">
+    <link rel="manifest" href="manifest.json">
     <link rel="icon" href="public/images/fevicon.jpg" sizes="192x192" type="image/jpg">
     <link rel="icon" href="public/images/fevicon.jpg" sizes="384x384" type="image/jpg">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
@@ -95,7 +95,7 @@
 
     if ('serviceWorker' in navigator) {
         window.addEventListener('load', function () {
-            navigator.serviceWorker.register('/WeddingSaga/public/js/serviceWorker.js').then(function (registration) {
+            navigator.serviceWorker.register('/WeddingSaga/serviceWorker.js').then(function (registration) {
                 // Registration was successful
                 console.log('ServiceWorker registration successful with scope: ', registration.scope);
             }, function (err) {
