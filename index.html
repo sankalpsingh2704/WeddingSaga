@@ -68,7 +68,13 @@
     if ('serviceWorker' in navigator) {
         window.addEventListener('load', function () {
             navigator.serviceWorker.register('/WeddingSaga/serviceWorker.js').then(function (registration) {
-                registration.showNotification("Welcome to Sankalp's Wedding");
+                Notification.requestPermission(function(status) {
+                    console.log('Notification permission status:', status);
+                });                
+               var t = setTimeout(()=> {
+                    displayNotification();
+                    clearTimeout(t);
+                },3000)
                 // Registration was successful
                 console.log('ServiceWorker registration successful with scope: ', registration.scope);
             }, function (err) {
@@ -76,6 +82,14 @@
                 console.log('ServiceWorker registration failed: ', err);
             });
         });
+    }
+    
+    function displayNotification() {
+    if (Notification.permission == 'granted') {
+        navigator.serviceWorker.getRegistration().then(function(reg) {
+            reg.showNotification('Hello world!');
+            });
+        }
     }
     
     window.addEventListener('appinstalled', (evt) => {
