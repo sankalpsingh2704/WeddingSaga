@@ -13,7 +13,7 @@
         "sizes": "512x512"
       }
     ],
-    "start_url": "/public/js/serviceWorker.js?source=pwa",
+    "start_url": "/WeddingSaga?source=pwa",
     "background_color": "#f67e7d",
     "display": "standalone",
     "scope": "/public/js/",
