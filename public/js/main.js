@@ -333,6 +333,8 @@
 }
 
 setInterval(function() { makeTimer(); }, 1000);
+	
+})(jQuery);
 
 function displayNotification(messg) {
     if (Notification.permission == 'granted') {
@@ -341,6 +343,4 @@ function displayNotification(messg) {
             });
         }
 	}
-	
-})(jQuery);
 
