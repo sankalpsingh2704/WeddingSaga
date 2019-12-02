@@ -56,6 +56,7 @@
     <script src="dist/my-first-webpack.bundle.js"></script>
     <script src="public/js/bootstrap.min.js"></script>
     <script src="public/js/main.js"></script>
+    <button id="btnAdd"> Add to Home</button>
 </body>
 <script>
     window.dataLayer = window.dataLayer || [];
@@ -76,10 +77,11 @@
         });
     }
     let deferredPrompt;
-
+    var btnAdd = document.getElementById("btnAdd");
     window.addEventListener('beforeinstallprompt', (e) => {
     // Stash the event so it can be triggered later.
     deferredPrompt = e;
+    
     btnAdd.style.display = 'block';
     
     });
