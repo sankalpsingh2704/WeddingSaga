@@ -7,7 +7,8 @@
   "scripts": {
     "start": "webpack-dev-server --color --open",
     "build": "webpack -p",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist",
+    "clean" : "gh-pages-clean"
   },
   "author": "sankalpn27@live.com",
   "license": "MIT",

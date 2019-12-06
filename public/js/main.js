@@ -62,7 +62,6 @@
 	};
 	burgerMenu();
 
-
 	var onePageClick = function() {
 
 

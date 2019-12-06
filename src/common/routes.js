@@ -23,6 +23,12 @@ const routes = [
         component: Login
     },
     {
+        path:'/Wedding',
+        name:"Wedding",
+        exact: false,
+        component: Wedding
+    },
+    {
         path: null,
         name:"Not Found",
         exact: true,
