@@ -1,10 +1,31 @@
 import React from 'react';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
+import { requestSaveRspv } from '../actions/rsvpAction';
 
-export default class Wedding extends React.Component {
+class Wedding extends React.Component {
 	constructor(props) {
 		super(props);
+		this.request = {
+			name: "",
+			email: "",
+			guest: "",
+			message: ""
+		}
 	}
 
+	componentDidMount(){
+		/*
+		this.props.requestSaveRspv({
+			name: "sankalp",
+			email: "sankalp",
+			guest: "sankalp",
+			message: "sankalp"
+		});*/
+	}
+	componentDidUpdate(){
+		console.log(this.props.submitState);
+	}
 	gallery = _ => {
 		let photos = [
 			"gallery-1.jpg",
@@ -134,6 +155,62 @@ export default class Wedding extends React.Component {
 			</section>
 		)
 	}
+
+	rsvp = _ => {
+		return (
+			<section className="ftco-section bg-secondary" id="rsvp-section">
+				<div className="container">
+					<div className="row justify-content-center pb-5">
+						<div className="col-md-12 text-center heading-section ftco-animate">
+							<span className="clone"></span>
+							<h2 className="mb-3">Are You Attending?</h2>
+						</div>
+					</div>
+					<div className="row justify-content-center">
+						<div className="col-md-7">
+							<form action="#" className="rsvp-form ftco-animate">
+								<div className="">
+									<div className="form-group">
+										<input type="text" className="form-control" onChange={e => this.request.name = e.target.value} placeholder="Name" />
+									</div>
+									<div className="form-group">
+										<input type="text" className="form-control" onChange={e => this.request.email = e.target.value} placeholder="Your email" />
+									</div>
+								</div>
+								<div className="">
+									<div className="form-group">
+										<div className="form-field">
+											<div className="select-wrap">
+												<div className="icon d-flex align-items-center justify-content-center"><span className="ion-ios-arrow-down"></span></div>
+												<select name="" id="guest" className="form-control" onChange={e => this.request.guest = e.target.value}>
+													<option value="">Guest</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div className="">
+									<div className="form-group">
+										<textarea name="message" id="" cols="30" rows="2" className="form-control" onChange={e => this.request.message = e.target.value} placeholder="Message"></textarea>
+									</div>
+									<div className="form-group">
+										<input type="button" onClick={_ => {this.props.requestSaveRspv(this.request)}} value="I am attending" className="btn btn-primary py-3 px-4" />
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+		)
+	}
+
+
 	showModal = _ => {
 		$("#myModal").show();
 	}
@@ -144,6 +221,7 @@ export default class Wedding extends React.Component {
 		const Gallery = this.gallery;
 		const FriendsAndFamily = this.familyAndFriends;
 		const SweetMessages = this.sweetMessages;
+		const Rsvp = this.rsvp;
 		return (
 			<div>
 				<nav className="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target" id="ftco-navbar">
@@ -171,7 +249,7 @@ export default class Wedding extends React.Component {
 				<section id="home" className="video-hero js-fullheight" style={{ "height": "700px", "backgroundImage": `url(${'public/images/bg_1.jpg'})`, "backgroundSize": "cover", "backgroundPosition": "top center" }} data-stellar-background-ratio="0.5">
 					<div className="overlay"></div>
 					<a className="player" data-property="{videoURL:'https://www.youtube.com/watch?v=Mjjw19B7rMk?rel=0&modestbranding=1&autohide=1&showinfo=0&controls=0&showinfo=0',containment:'#home', showControls:false, autoPlay:true, loop:true, mute:true, startAt:0, opacity:1, quality:'default',optimizeDisplay:true}"></a>
-					<a className="player" style={{display: "none", visibility: "hidden"}} data-property="{videoURL:'https://youtu.be/49ipG99rR5w?rel=0&modestbranding=1&autohide=1&showinfo=0&controls=0&showinfo=0',containment:'#home', showControls:false, autoPlay:true, loop:true, mute:false, startAt:0, opacity:1, quality:'default',optimizeDisplay:true}"></a>
+					<a className="player" style={{ display: "none", visibility: "hidden" }} data-property="{videoURL:'https://youtu.be/49ipG99rR5w?rel=0&modestbranding=1&autohide=1&showinfo=0&controls=0&showinfo=0',containment:'#home', showControls:false, autoPlay:true, loop:true, mute:false, startAt:0, opacity:1, quality:'default',optimizeDisplay:true}"></a>
 					<div className="container">
 						<div className="row js-fullheight justify-content-center d-flex align-items-center">
 							<div className="col-md-12">
@@ -385,59 +463,10 @@ export default class Wedding extends React.Component {
 						</div>
 					</div>
 				</section>
-
-
-				<section className="ftco-section bg-secondary" id="rsvp-section">
-					<div className="container">
-						<div className="row justify-content-center pb-5">
-							<div className="col-md-12 text-center heading-section ftco-animate">
-								<span className="clone"></span>
-								<h2 className="mb-3">Are You Attending?</h2>
-							</div>
-						</div>
-						<div className="row justify-content-center">
-							<div className="col-md-7">
-								<form action="#" className="rsvp-form ftco-animate">
-									<div className="">
-										<div className="form-group">
-											<input type="text" className="form-control" placeholder="Name" />
-										</div>
-										<div className="form-group">
-											<input type="text" className="form-control" placeholder="Your email" />
-										</div>
-									</div>
-									<div className="">
-										<div className="form-group">
-											<div className="form-field">
-												<div className="select-wrap">
-													<div className="icon d-flex align-items-center justify-content-center"><span className="ion-ios-arrow-down"></span></div>
-													<select name="" id="" className="form-control">
-														<option value="">Guest</option>
-														<option value="">1</option>
-														<option value="">2</option>
-														<option value="">3</option>
-														<option value="">4</option>
-														<option value="">5</option>
-													</select>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div className="">
-										<div className="form-group">
-											<textarea name="" id="" cols="30" rows="2" className="form-control" placeholder="Message"></textarea>
-										</div>
-										<div className="form-group">
-											<input type="submit" value="I am attending" className="btn btn-primary py-3 px-4" />
-										</div>
-									</div>
-								</form>
-							</div>
-						</div>
-					</div>
-				</section>
-
-
+				{
+					this.props.submitState.response == "success" ? "" :<Rsvp />
+				}
+				
 				<Gallery />
 
 				<footer className="ftco-footer ftco-section">
@@ -526,3 +555,19 @@ export default class Wedding extends React.Component {
 		)
 	}
 }
+
+const mapStateToProps = (state, ownProps) => {
+	return {
+		submitState: state.rsvp
+	}
+}
+const mapDispatchToProps = dispatch => {
+
+	return {
+		...bindActionCreators(
+			{ requestSaveRspv }
+			, dispatch)
+	}
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Wedding);

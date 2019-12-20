@@ -5,13 +5,20 @@ import { Switch, BrowserRouter as Router , Route } from 'react-router-dom';
 import Routes from './common/routes';
 import thunk from 'redux-thunk';
 import logger from 'redux-logger';
-import reducer from './reducers/index';
-import custommiddleware from './common/custommiddleware';
-import { createStore, applyMiddleware } from 'redux';
+import createSagaMiddleWare from 'redux-saga';
+import { rootReducer, rootSaga } from './reducers/index';
+//import custommiddleware from './common/custommiddleware';
+import { createStore, applyMiddleware, compose } from 'redux';
 import ErrorBoundary from './common/ErrorBoundary.jsx';
 
 const root = document.getElementById('root');
-const store = createStore(reducer,applyMiddleware(thunk,logger,custommiddleware));
+
+const sagaMiddleWare = createSagaMiddleWare();
+const middleWare = applyMiddleware(thunk,logger,sagaMiddleWare);
+const composeEnhancers = (typeof window !== 'undefined' && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) || compose;;
+const store = createStore(rootReducer,{},composeEnhancers(middleWare));
+sagaMiddleWare.run(rootSaga);
+
 
 ReactDOM.render(
     <ErrorBoundary>
