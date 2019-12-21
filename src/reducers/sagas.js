@@ -21,7 +21,7 @@ const AddToDb = (payload) => {
 }
 
 userRef.on('child_added', function (snapshot) {
-    if(snapshot.val())
+    if(snapshot.val().name)
         displayNotification(snapshot.val().name + " is coming for wedding !");
 });
 
