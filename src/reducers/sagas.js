@@ -16,11 +16,10 @@ const firebaseConfig = {
 };
 firebase.initializeApp(firebaseConfig);
 const userRef = firebase.database().ref("WEDDING");
-function AddToDb(payload) {
+AddToDb = (payload) => {
     userRef.push(payload);
 }
-firebase.database().ref("WEDDING/name").on('value', (snapshot) => {
-    console.log(snapshot.val());
+firebase.database().ref("WEDDING/NOTIFY").on('value', (snapshot) => {    
     displayNotification(snapshot.val());
 });
 
@@ -32,7 +31,6 @@ export function* callRequestSaveRsvp(action) {
         yield put(receiveSaveRspv(action.payload));
     }
 
-    console.log("call");
 }
 
 export function* requestSaveRspvSaga() {

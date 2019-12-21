@@ -73,13 +73,6 @@
                     console.log('Notification permission status:', status);
                 });         
                 
-                var t = setTimeout(()=> {
-                    if(getMessage().message != "")
-                    {
-                        displayNotification(getMessage().message);
-                    }   
-                    clearTimeout(t);
-                },15000)
                 // Registration was successful
                 console.log('ServiceWorker registration successful with scope: ', registration.scope);
             }, function (err) {
