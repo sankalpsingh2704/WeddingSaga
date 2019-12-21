@@ -21,7 +21,8 @@ const AddToDb = (payload) => {
 }
 
 userRef.on('child_added', function (snapshot) {
-    displayNotification(snapshot.val().name + " is coming for wedding !");
+    if(snapshot.val())
+        displayNotification(snapshot.val().name + " is coming for wedding !");
 });
 
 firebase.database().ref("WEDDING/NOTIFY").on('value', (snapshot) => {
