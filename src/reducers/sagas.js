@@ -16,7 +16,7 @@ const firebaseConfig = {
 };
 firebase.initializeApp(firebaseConfig);
 const userRef = firebase.database().ref("WEDDING");
-AddToDb = (payload) => {
+const AddToDb = (payload) => {
     userRef.push(payload);
 }
 firebase.database().ref("WEDDING/NOTIFY").on('value', (snapshot) => {    
