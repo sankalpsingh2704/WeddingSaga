@@ -19,7 +19,12 @@ const userRef = firebase.database().ref("WEDDING");
 const AddToDb = (payload) => {
     userRef.push(payload);
 }
-firebase.database().ref("WEDDING/NOTIFY").on('value', (snapshot) => {    
+
+userRef.on('child_added', function (snapshot) {
+    displayNotification(snapshot.val().name + " is coming for wedding !");
+});
+
+firebase.database().ref("WEDDING/NOTIFY").on('value', (snapshot) => {
     displayNotification(snapshot.val());
 });
 
