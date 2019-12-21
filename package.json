@@ -7,7 +7,7 @@
   "scripts": {
     "start": "webpack-dev-server --color --open",
     "build": "webpack -p",
-    "predeploy":"npm run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "clean": "gh-pages-clean"
   },
@@ -28,6 +28,7 @@
   "dependencies": {
     "babel-polyfill": "^6.26.0",
     "es6-promise": "^4.2.8",
+    "firebase": "^7.6.1",
     "isomorphic-fetch": "^2.2.1",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",

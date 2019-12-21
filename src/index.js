@@ -11,6 +11,7 @@ import { rootReducer, rootSaga } from './reducers/index';
 import { createStore, applyMiddleware, compose } from 'redux';
 import ErrorBoundary from './common/ErrorBoundary.jsx';
 
+
 const root = document.getElementById('root');
 
 const sagaMiddleWare = createSagaMiddleWare();
@@ -19,6 +20,7 @@ const composeEnhancers = (typeof window !== 'undefined' && window.__REDUX_DEVTOO
 const store = createStore(rootReducer,{},composeEnhancers(middleWare));
 sagaMiddleWare.run(rootSaga);
 
+ 
 
 ReactDOM.render(
     <ErrorBoundary>
