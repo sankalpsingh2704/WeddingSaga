@@ -14,18 +14,6 @@ class Wedding extends React.Component {
 		}
 	}
 
-	componentDidMount(){
-		/*
-		this.props.requestSaveRspv({
-			name: "sankalp",
-			email: "sankalp",
-			guest: "sankalp",
-			message: "sankalp"
-		});*/
-	}
-	componentDidUpdate(){
-		console.log(this.props.submitState);
-	}
 	gallery = _ => {
 		let photos = [
 			"gallery-1.jpg",
@@ -63,11 +51,11 @@ class Wedding extends React.Component {
 	}
 	sweetMessages = _ => {
 		const messages = [
-			{ Name: "Roger Scott 1", Message: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.", Position: "Marketing Manager", Photo: "person_1.jpg" },
-			{ Name: "Roger Scott 2", Message: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.", Position: "Marketing Manager", Photo: "person_2.jpg" },
-			{ Name: "Roger Scott 3", Message: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.", Position: "Marketing Manager", Photo: "person_3.jpg" },
-			{ Name: "Roger Scott 4", Message: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.", Position: "Marketing Manager", Photo: "person_1.jpg" },
-			{ Name: "Roger Scott 5", Message: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.", Position: "Marketing Manager", Photo: "person_2.jpg" }
+			{ Name: "KRITIKA", Message: "I was born lucky because I had a brother like you. You have always been the best person in my life. I know you'll make a good husband too!", Position: "Grooms Sister", Photo: "person_1.jpg" },
+			{ Name: "MAHIMA", Message: "God has blessed you with a perfect partner for life. Preserve and Chreish him forever. Let the bond of love grow sweeter and stronger between you!", Position: "Brides Sister", Photo: "person_2.jpg" },
+			{ Name: "SHASHANK", Message: "Always keep your life partner happy and support him when he is facing a tough time in his life. May love grows between you two with every year that passes by.", Position: "Brides Brother", Photo: "person_3.jpg" },
+			{ Name: "RAHUL", Message: "She Turned You From The Boy You Were To The Man You Are,So Be Sure She Will Turn You To The Husband You Are Going To Be. Congratulations! ", Position: "Grooms Friend", Photo: "person_1.jpg" },
+			{ Name: "SOUMYA", Message: "As the days lead to the beginning of a new chapter for you, may each day be renewal of your love for each othe. Congratulations on your big day!", Position: "Brides Friend", Photo: "person_2.jpg" }
 		];
 		return (
 			<section className="ftco-section bg-light" id="greeting-section">
@@ -111,14 +99,17 @@ class Wedding extends React.Component {
 	}
 	familyAndFriends = _ => {
 		const peoples = [
-			{ Name: "Roli, Sakshi", Type: "Groomsmen", Photo: "rols.jpg" },
-			{ Name: "Akanksha", Type: "Groomsmen", Photo: "akanksha.jpg" },
+			{ Name: "Rini, Roli, Sakshi", Type: "Grooms Side", Photo: "rols.jpg" },
+			{ Name: "Akanksha", Type: "Grooms Side", Photo: "akanksha.jpg" },
 			{ Name: "Rahul", Type: "Groomsmen", Photo: "rahul.jpg" },
 			{ Name: "Ankur", Type: "Groomsmen", Photo: "ankur.jpg" },
-			{ Name: "", Type: "Bridesmaid", Photo: "bridesmaid-1.jpg" },
-			{ Name: "Mary Dell", Type: "Bridesmaid", Photo: "bridesmaid-2.jpg" },
-			{ Name: "Alicia Brean", Type: "Bridesmaid", Photo: "bridesmaid-3.jpg" },
-			{ Name: "Angel Worth", Type: "Bridesmaid", Photo: "bridesmaid-4.jpg" }
+			{ Name: "Keshav & Madhu", Type: "Grooms Side", Photo: "keshav_madhu.jpg" },
+			{ Name: "Anshul, Pari, Kritika", Type: "Grooms Side", Photo: "groomsmen-2.jpg" },
+			{ Name: "Deeps, Mrigya, Sumi", Type: "Bridesmaid", Photo: "bridesmaid-1.jpg" },
+			{ Name: "Santosh & Amrita", Type: "Brides Side", Photo: "santosh&amrita.jpg" },
+			{ Name: "Ajay & Sangeeta", Type: "Brides Side", Photo: "ajay_sangeeta.jpg" },
+			{ Name: "Bangalore Friends", Type: "Brides Side", Photo: "changu_mangu.jpg" },
+			{ Name: "Renu & Shashank", Type: "Brides Side", Photo: "renu_shashank.jpg" }
 		];
 		return (
 			<section className="ftco-section" id="people-section">
@@ -249,7 +240,7 @@ class Wedding extends React.Component {
 				<section id="home" className="video-hero js-fullheight" style={{ "height": "700px", "backgroundImage": `url(${'public/images/bg_1.jpg'})`, "backgroundSize": "cover", "backgroundPosition": "top center" }} data-stellar-background-ratio="0.5">
 					<div className="overlay"></div>
 					<a className="player" data-property="{videoURL:'https://www.youtube.com/watch?v=Mjjw19B7rMk?rel=0&modestbranding=1&autohide=1&showinfo=0&controls=0&showinfo=0',containment:'#home', showControls:false, autoPlay:true, loop:true, mute:true, startAt:0, opacity:1, quality:'default',optimizeDisplay:true}"></a>
-					<a className="player" style={{ display: "none", visibility: "hidden" }} data-property="{videoURL:'https://youtu.be/49ipG99rR5w?rel=0&modestbranding=1&autohide=1&showinfo=0&controls=0&showinfo=0',containment:'#home', showControls:false, autoPlay:true, loop:true, mute:false, startAt:0, opacity:1, quality:'default',optimizeDisplay:true}"></a>
+					<a className="player" style={{ display: "none", visibility: "hidden" }} data-property="{videoURL:'https://youtu.be/g5YP_991Eoo?rel=0&modestbranding=1&autohide=1&showinfo=0&controls=0&showinfo=0',containment:'#home', showControls:false, autoPlay:true, loop:true, mute:false, startAt:0, opacity:1, quality:'default',optimizeDisplay:true}"></a>
 					<div className="container">
 						<div className="row js-fullheight justify-content-center d-flex align-items-center">
 							<div className="col-md-12">
@@ -292,7 +283,7 @@ class Wedding extends React.Component {
 														<span className="subheading">Which is celebration on</span>
 														<p className="time mb-4"><span>March | 2 | 2020</span></p>
 														<span className="subheading mb-5">Starting at 7:00 <br /> in the evening</span>
-														<span className="subheading mb-5">Near By Sports Club, Lukarganj <br /> in Prayagraj, Uttar Pradesh</span>
+														<span className="subheading mb-5">PRAYAG HOLIDAY <br /> IN LUKARGANJ, PRAYAGRAJ, UP</span>
 													</div>
 												</div>
 											</div>
@@ -427,11 +418,11 @@ class Wedding extends React.Component {
 							<div className="col-md-4 ftco-animate">
 								<div className="place img" style={{ "backgroundImage": `url(${'public/images/place-1.jpg'})` }}>
 									<div className="text text-center">
-										<span className="icon flaticon-reception-bell"></span>
-										<h3>The Reception</h3>
-										<p><span>Saturday, 28, 2019</span><br /><span>02:00 pm-10:00 pm</span></p>
-										<p><span>203 Fake St. Mountain View, San Francisco, California, USA</span></p>
-										<p><a href="#">+0 (123) 456 78 910</a></p>
+										<span className="icon flaticon-wedding-kiss"></span>
+										<h3>Engagement &amp; Sangeet</h3>
+										<p><span>Saturday, 01-March-2020</span><br /><span>06:00 pm onwards</span></p>
+										<p><span>PRAYAG HOLIDAY, LUKARGANJ IN PRAYAGRAJ, UP</span></p>
+										<p><a href="#">+(91)-9451852666</a></p>
 										<p><span className="btn-custom" onClick={this.showModal}>See Map</span></p>
 									</div>
 								</div>
@@ -439,11 +430,11 @@ class Wedding extends React.Component {
 							<div className="col-md-4 ftco-animate">
 								<div className="place img" style={{ "backgroundImage": `url(${'public/images/place-2.jpg'})` }}>
 									<div className="text text-center">
-										<span className="icon flaticon-wedding-kiss"></span>
-										<h3>The Ceremony</h3>
-										<p><span>Saturday, 28, 2019</span><br /><span>02:00 pm-10:00 pm</span></p>
-										<p><span>203 Fake St. Mountain View, San Francisco, California, USA</span></p>
-										<p><a href="#">+0 (123) 456 78 910</a></p>
+										<span className="icon flaticon-cake"></span>
+										<h3>The Haldi Ceremony</h3>
+										<p><span>Monday, 02-March-2019</span><br /><span>12:00 pm to 02:00 pm</span></p>
+										<p><span>PRAYAG HOLIDAY, LUKARGANJ IN PRAYAGRAJ, UP</span></p>
+										<p><a href="#">+(91)-9451852666</a></p>
 										<p><span className="btn-custom" onClick={this.showModal}>See Map</span></p>
 									</div>
 								</div>
@@ -451,11 +442,11 @@ class Wedding extends React.Component {
 							<div className="col-md-4 ftco-animate">
 								<div className="place img" style={{ "backgroundImage": `url(${'public/images/place-3.jpg'})` }}>
 									<div className="text text-center">
-										<span className="icon flaticon-cake"></span>
-										<h3>The Party</h3>
-										<p><span>Saturday, 28, 2019</span><br /><span>02:00 pm-10:00 pm</span></p>
-										<p><span>203 Fake St. Mountain View, San Francisco, California, USA</span></p>
-										<p><a href="#">+0 (123) 456 78 910</a></p>
+										<span className="icon flaticon-reception-bell"></span>
+										<h3>The Reception &amp; Phere</h3>
+										<p><span>Monday, 02-March-2020</span><br /><span>07:00 pm onwards</span></p>
+										<p><span>PRAYAG HOLIDAY, LUKARGANJ IN PRAYAGRAJ, UP</span></p>
+										<p><a href="#">+(91)-9451852666</a></p>
 										<p><span className="btn-custom" onClick={this.showModal}>See Map</span></p>
 									</div>
 								</div>
