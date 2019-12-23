@@ -9,9 +9,7 @@ let initialState = {
     response: ""
 }
 export function rsvp(state = initialState, action){
-    console.log(action);
-    switch(action.type){
-        
+    switch(action.type){        
         case RECEIVE_SAVE_RSVP:
         return {
                 ...state,
