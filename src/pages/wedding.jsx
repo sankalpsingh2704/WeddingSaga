@@ -13,7 +13,6 @@ class Wedding extends React.Component {
 			message: ""
 		}
 	}
-
 	gallery = _ => {
 		let photos = [
 			"gallery-1.jpg",
@@ -147,6 +146,21 @@ class Wedding extends React.Component {
 		)
 	}
 
+	thanks = _ => {
+		return (
+			<section className="ftco-section bg-secondary" id="rsvp-section">
+				<div className="container">
+					<div className="row justify-content-center pb-5">
+						<div className="col-md-12 text-center heading-section ftco-animate">
+							<span className="clone"></span>
+							<h2 className="mb-3">Thanks for your response !</h2>
+						</div>
+					</div>
+				</div>
+			</section>
+		)
+	}
+
 	rsvp = _ => {
 		return (
 			<section className="ftco-section bg-secondary" id="rsvp-section">
@@ -190,7 +204,7 @@ class Wedding extends React.Component {
 										<textarea name="message" id="" cols="30" rows="2" className="form-control" onChange={e => this.request.message = e.target.value} placeholder="Message"></textarea>
 									</div>
 									<div className="form-group">
-										<input type="button" onClick={_ => {this.props.requestSaveRspv(this.request)}} value="I am attending" className="btn btn-primary py-3 px-4" />
+										<input type="button" onClick={_ => { this.props.requestSaveRspv(this.request) }} value="I am attending" className="btn btn-primary py-3 px-4" />
 									</div>
 								</div>
 							</form>
@@ -200,8 +214,6 @@ class Wedding extends React.Component {
 			</section>
 		)
 	}
-
-
 	showModal = _ => {
 		$("#myModal").show();
 	}
@@ -213,6 +225,7 @@ class Wedding extends React.Component {
 		const FriendsAndFamily = this.familyAndFriends;
 		const SweetMessages = this.sweetMessages;
 		const Rsvp = this.rsvp;
+		const Thanks = this.thanks;
 		return (
 			<div>
 				<nav className="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target" id="ftco-navbar">
@@ -221,7 +234,6 @@ class Wedding extends React.Component {
 						<button className="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 							<span className="oi oi-menu"></span> Menu
 	      				</button>
-
 						<div className="collapse navbar-collapse" id="ftco-nav">
 							<ul className="navbar-nav nav ml-auto">
 								<li className="nav-item"><a href="#home-section" className="nav-link"><span>Home</span></a></li>
@@ -236,11 +248,10 @@ class Wedding extends React.Component {
 						</div>
 					</div>
 				</nav>
-
 				<section id="home" className="video-hero js-fullheight" style={{ "height": "700px", "backgroundImage": `url(${'public/images/bg_1.jpg'})`, "backgroundSize": "cover", "backgroundPosition": "top center" }} data-stellar-background-ratio="0.5">
 					<div className="overlay"></div>
 					<a className="player" data-property="{videoURL:'https://www.youtube.com/watch?v=Mjjw19B7rMk?rel=0&modestbranding=1&autohide=1&showinfo=0&controls=0&showinfo=0',containment:'#home', showControls:false, autoPlay:true, loop:true, mute:true, startAt:0, opacity:1, quality:'default',optimizeDisplay:true}"></a>
-					<audio autoPlay loop src="public/music/kabira.m4a" style={{visibility:"hidden"}} />
+					<audio autoPlay loop src="public/music/kabira.m4a" style={{ visibility: "hidden" }} />
 					<div className="container">
 						<div className="row js-fullheight justify-content-center d-flex align-items-center">
 							<div className="col-md-12">
@@ -261,8 +272,6 @@ class Wedding extends React.Component {
 						</div>
 					</div>
 				</section>
-
-
 				<section className="ftco-section ftco-about ftco-no-pt ftco-no-pb" id="groom-bride-section">
 					<div className="container">
 						<div className="row">
@@ -294,8 +303,6 @@ class Wedding extends React.Component {
 						</div>
 					</div>
 				</section>
-
-
 				<section className="ftco-section bg-section">
 					<div className="overlay-top" style={{ "backgroundImage": `url(${'public/images/top-bg.jpg'})` }}></div>
 					<div className="overlay-bottom" style={{ "backgroundImage": `url(${'public/images/bottom-bg.jpg'})` }}></div>
@@ -332,9 +339,6 @@ class Wedding extends React.Component {
 						</div>
 					</div>
 				</section>
-
-
-
 				<section className="ftco-section" id="lovestory-section">
 					<div className="container">
 						<div className="row justify-content-center pb-5">
@@ -403,7 +407,6 @@ class Wedding extends React.Component {
 						</div>
 					</div>
 				</section>
-
 				<SweetMessages />
 				<FriendsAndFamily />
 				<section className="ftco-section bg-light" id="when-where-section">
@@ -455,11 +458,9 @@ class Wedding extends React.Component {
 					</div>
 				</section>
 				{
-					this.props.submitState.response == "success" ? "" :<Rsvp />
+					this.props.submitState.response == "success" ? <Thanks />: <Rsvp/>
 				}
-				
 				<Gallery />
-
 				<footer className="ftco-footer ftco-section">
 					<div className="overlay"></div>
 					<div className="container">
@@ -475,7 +476,6 @@ class Wedding extends React.Component {
 									</ul>
 								</div>
 							</div>
-
 							<div className="col-md">
 								<div className="ftco-footer-widget mb-4 ml-md-4">
 									<h2 className="ftco-heading-2">Links</h2>
@@ -546,19 +546,16 @@ class Wedding extends React.Component {
 		)
 	}
 }
-
 const mapStateToProps = (state, ownProps) => {
 	return {
 		submitState: state.rsvp
 	}
 }
 const mapDispatchToProps = dispatch => {
-
 	return {
 		...bindActionCreators(
 			{ requestSaveRspv }
 			, dispatch)
 	}
 }
-
 export default connect(mapStateToProps, mapDispatchToProps)(Wedding);
