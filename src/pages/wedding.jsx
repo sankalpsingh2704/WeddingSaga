@@ -50,11 +50,11 @@ class Wedding extends React.Component {
 	}
 	sweetMessages = _ => {
 		const messages = [
-			{ Name: "KRITIKA", Message: "I was born lucky because I had a brother like you. You have always been the best person in my life. I know you'll make a good husband too!", Position: "Grooms Sister", Photo: "person_1.jpg" },
-			{ Name: "MAHIMA", Message: "God has blessed you with a perfect partner for life. Preserve and Chreish him forever. Let the bond of love grow sweeter and stronger between you!", Position: "Brides Sister", Photo: "person_2.jpg" },
-			{ Name: "SHASHANK", Message: "Always keep your life partner happy and support him when he is facing a tough time in his life. May love grows between you two with every year that passes by.", Position: "Brides Brother", Photo: "person_3.jpg" },
-			{ Name: "RAHUL", Message: "She Turned You From The Boy You Were To The Man You Are,So Be Sure She Will Turn You To The Husband You Are Going To Be. Congratulations! ", Position: "Grooms Friend", Photo: "person_1.jpg" },
-			{ Name: "SOUMYA", Message: "As the days lead to the beginning of a new chapter for you, may each day be renewal of your love for each other. Congratulations on your big day!", Position: "Brides Friend", Photo: "person_2.jpg" }
+			{ Name: "KRITIKA", Message: "I was born lucky because I had a brother like you. You have always been the best person in my life. I know you'll make a good husband too!", Position: "Grooms Sister", Photo: "kittu.jpg" },
+			{ Name: "MAHIMA", Message: "God has blessed you with a perfect partner for life. Preserve and Chreish him forever. Let the bond of love grow sweeter and stronger between you!", Position: "Brides Sister", Photo: "rimjhim.jpg" },
+			{ Name: "SHASHANK", Message: "Always keep your life partner happy and support him when he is facing a tough time in his life. May love grows between you two with every year that passes by.", Position: "Brides Brother", Photo: "shashank.jpg" },
+			{ Name: "RAHUL", Message: "She Turned You From The Boy You Were To The Man You Are,So Be Sure She Will Turn You To The Husband You Are Going To Be. Congratulations! ", Position: "Grooms Friend", Photo: "rahul2.jpg" },
+			{ Name: "SOUMYA", Message: "As the days lead to the beginning of a new chapter for you, may each day be renewal of your love for each other. Congratulations on your big day!", Position: "Brides Friend", Photo: "sumi.jpg" }
 		];
 		return (
 			<section className="ftco-section bg-light" id="greeting-section">
@@ -98,7 +98,7 @@ class Wedding extends React.Component {
 	}
 	familyAndFriends = _ => {
 		const peoples = [
-			{ Name: "Rini, Roli, Sakshi", Type: "Grooms Side", Photo: "rols.jpg" },
+			{ Name: "Rini, Sakshi, Roli", Type: "Grooms Side", Photo: "rols.jpg" },
 			{ Name: "Akanksha", Type: "Grooms Side", Photo: "akanksha.jpg" },
 			{ Name: "Rahul", Type: "Groomsmen", Photo: "rahul.jpg" },
 			{ Name: "Ankur", Type: "Groomsmen", Photo: "ankur.jpg" },
@@ -108,7 +108,9 @@ class Wedding extends React.Component {
 			{ Name: "Santosh & Amrita", Type: "Brides Side", Photo: "santosh&amrita.jpg" },
 			{ Name: "Ajay & Sangeeta", Type: "Brides Side", Photo: "ajay_sangeeta.jpg" },
 			{ Name: "Bangalore Friends", Type: "Brides Side", Photo: "changu_mangu.jpg" },
-			{ Name: "Renu & Shashank", Type: "Brides Side", Photo: "renu_shashank.jpg" }
+			{ Name: "Renu & Shashank", Type: "Brides Side", Photo: "renu_shashank.jpg" },
+			{ Name: "Akash", Type: "Brides Side", Photo: "akash.jpg" },
+			{ Name: "Sparsh & Mahima", Type: "Brides Side", Photo: "rinshu_rimjhim.jpg" }
 		];
 		return (
 			<section className="ftco-section" id="people-section">
@@ -321,7 +323,7 @@ class Wedding extends React.Component {
 											<div className="img" style={{ "backgroundImage": `url(${'public/images/groom.jpg'})` }}></div>
 											<div className="text mt-4 px-4">
 												<h2>Sankalp</h2>
-												<p>Far far away, behind the word mountains, far from the state Uttar Pradesh and Prayagraj, there live the blind texts. Separated they live in Bangalore right at the coast of the Semantics, a large Silicon Valley of India.</p>
+												<p>A guy from Uttar Pradesh in the search of a girl like me with lots of sharing and caring from him finally, come to conclussion of making together whole life. A kind and humble heart, who always thinks of bringing smile on your face. Love to have him as a partner.</p>
 											</div>
 										</div>
 									</div>
@@ -468,7 +470,7 @@ class Wedding extends React.Component {
 							<div className="col-md">
 								<div className="ftco-footer-widget mb-4">
 									<h2 className="ftco-heading-2">Wedding</h2>
-									<p>Far far away, behind the word mountains, far from the countries.</p>
+									<p>Finally – thank you for your ongoing love and support. We are so excited to share this day with you and look forward to dancing the night away with all of our favourite people!</p>
 									<ul className="ftco-footer-social list-unstyled mt-5">
 										<li className="ftco-animate"><a href="https://twitter.com/sankalp_27" target="_blank"><span className="icon-twitter"></span></a></li>
 										<li className="ftco-animate"><a href="https://www.facebook.com/sankalptechno" target="_blank"><span className="icon-facebook"></span></a></li>
@@ -507,7 +509,7 @@ class Wedding extends React.Component {
 									<h2 className="ftco-heading-2">Have a Questions?</h2>
 									<div className="block-23 mb-3">
 										<ul>
-											<li><a href="https://goo.gl/maps/AZCemMzsejHPXdGJA"> <span className="icon icon-map-marker"></span><span className="text">Lukerganj, Prayagraj , Uttar Pradesh </span></a></li>
+											<li><a href="https://goo.gl/maps/AZCemMzsejHPXdGJA"> <span className="icon icon-map-marker"></span><span className="text">Lukarganj, Prayagraj , Uttar Pradesh </span></a></li>
 											<li><a href="tel:+919451852666"><span className="icon icon-phone"></span><span className="text">+91-9451852666</span></a></li>
 											<li><a href="mailto:sankalpn27@live.com"><span className="icon icon-envelope pr-4"></span><span className="text">sankalpn27@live.com</span></a></li>
 										</ul>
