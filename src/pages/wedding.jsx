@@ -153,7 +153,7 @@ class Wedding extends React.Component {
 			<section className="ftco-section bg-secondary" id="rsvp-section">
 				<div className="container">
 					<div className="row justify-content-center pb-5">
-						<div className="col-md-12 text-center heading-section ftco-animate">
+						<div className="col-md-12 text-center heading-section">
 							<span className="clone"></span>
 							<h2 className="mb-3">Thanks for your response !</h2>
 						</div>
@@ -244,8 +244,8 @@ class Wedding extends React.Component {
 								<li className="nav-item"><a href="#greeting-section" className="nav-link"><span>Greetings</span></a></li>
 								<li className="nav-item"><a href="#people-section" className="nav-link"><span>People</span></a></li>
 								<li className="nav-item"><a href="#when-where-section" className="nav-link"><span>When &amp; Where</span></a></li>
-								<li className="nav-item"><a href="#rsvp-section" className="nav-link"><span>RSVP</span></a></li>
 								<li className="nav-item"><a href="#gallery-section" className="nav-link"><span>Gallery</span></a></li>
+								<li className="nav-item"><a href="#rsvp-section" className="nav-link"><span>RSVP</span></a></li>
 							</ul>
 						</div>
 					</div>
@@ -459,10 +459,10 @@ class Wedding extends React.Component {
 						</div>
 					</div>
 				</section>
+				<Gallery />
 				{
 					this.props.submitState.response == "success" ? <Thanks />: <Rsvp/>
 				}
-				<Gallery />
 				<footer className="ftco-footer ftco-section">
 					<div className="overlay"></div>
 					<div className="container">
