@@ -323,7 +323,7 @@ class Wedding extends React.Component {
 											<div className="img" style={{ "backgroundImage": `url(${'public/images/groom.jpg'})` }}></div>
 											<div className="text mt-4 px-4">
 												<h2>Sankalp</h2>
-												<p>A guy from Uttar Pradesh in the search of a girl like me with lots of sharing and caring from him finally, come to conclussion of making together whole life. A kind and humble heart, who always thinks of bringing smile on your face. Love to have him as a partner.</p>
+												<p>A guy from Uttar Pradesh in the search of a girl like me with lots of sharing and caring from him finally, come to conclusion of making together whole life. A kind and humble heart, who always thinks of bringing smile on your face. Love to have him as a partner.</p>
 											</div>
 										</div>
 									</div>
@@ -332,7 +332,7 @@ class Wedding extends React.Component {
 											<div className="img" style={{ "backgroundImage": `url(${'public/images/bride.jpg'})` }}></div>
 											<div className="text mt-4 px-4">
 												<h2>Khushbu</h2>
-												<p>Far far away, behind the word mountains, far from the state Chattisgarh and Bilaspur, there live the blind texts. Separated they live in Bangalore right at the coast of the Semantics, a large Silicon Valley of India.</p>
+												<p>A girl from Chattisgarh waiting for a prince like me who is able to feel her, hoping i can walk through the steps for becoming a permanent partner. A very sweet &amp; pure heart like child blown my mind and her alot of trust on me finally made my dream true. Feeling lucky to have such a beautiful girl as my life partner </p>
 											</div>
 										</div>
 									</div>
@@ -387,7 +387,7 @@ class Wedding extends React.Component {
 												<h3 className="timeline-title">In A Relationship</h3>
 											</div>
 											<div className="timeline-body">
-												<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in .</p>
+												<p>This was the most beautiful time when he came all the way to Bangalore which bring our hearts close together. Hoping to see each other just with our inner wishes.</p>
 											</div>
 										</div>
 									</li>
@@ -482,14 +482,12 @@ class Wedding extends React.Component {
 								<div className="ftco-footer-widget mb-4 ml-md-4">
 									<h2 className="ftco-heading-2">Links</h2>
 									<ul className="list-unstyled">
-										<li><a href="#"><span className="icon-long-arrow-right mr-2"></span>Home</a></li>
-										<li><a href="#"><span className="icon-long-arrow-right mr-2"></span>Groom &amp; Bride</a></li>
-										<li><a href="#"><span className="icon-long-arrow-right mr-2"></span>Story</a></li>
-										<li><a href="#"><span className="icon-long-arrow-right mr-2"></span>Greetings</a></li>
-										<li><a href="#"><span className="icon-long-arrow-right mr-2"></span>People</a></li>
-										<li><a href="#"><span className="icon-long-arrow-right mr-2"></span>Where &amp; When</a></li>
-										<li><a href="#"><span className="icon-long-arrow-right mr-2"></span>RSVP</a></li>
-										<li><a href="#"><span className="icon-long-arrow-right mr-2"></span>Gallery</a></li>
+										<li><a href="#home"><span className="icon-long-arrow-right mr-2"></span>Home</a></li>
+										<li><a href="#groom-bride-section"><span className="icon-long-arrow-right mr-2"></span>Groom &amp; Bride</a></li>
+										<li><a href="#lovestory-section"><span className="icon-long-arrow-right mr-2"></span>Story</a></li>
+										<li><a href="#greeting-section"><span className="icon-long-arrow-right mr-2"></span>Greetings</a></li>
+										<li><a href="#when-where-section"><span className="icon-long-arrow-right mr-2"></span>Where &amp; When</a></li>
+										<li><a href="#rsvp-section"><span className="icon-long-arrow-right mr-2"></span>RSVP</a></li>
 									</ul>
 								</div>
 							</div>
@@ -497,10 +495,11 @@ class Wedding extends React.Component {
 								<div className="ftco-footer-widget mb-4">
 									<h2 className="ftco-heading-2">Services</h2>
 									<ul className="list-unstyled">
-										<li><a href="#"><span className="icon-long-arrow-right mr-2"></span>Organizer</a></li>
-										<li><a href="#"><span className="icon-long-arrow-right mr-2"></span>Venue</a></li>
-										<li><a href="#"><span className="icon-long-arrow-right mr-2"></span>Wedding Ceremony</a></li>
-										<li><a href="#"><span className="icon-long-arrow-right mr-2"></span>Accomodation</a></li>
+										<li><a href="mailto:sankalpn27@live.com"><span className="icon-long-arrow-right mr-2"></span>Organizer</a></li>
+										<li><a href="https://goo.gl/maps/AZCemMzsejHPXdGJA"><span className="icon-long-arrow-right mr-2"></span>Venue</a></li>
+										<li><a href="#when-where-section"><span className="icon-long-arrow-right mr-2"></span>Wedding Ceremony</a></li>
+										<li><a href="#people-section"><span className="icon-long-arrow-right mr-2"></span>People</a></li>
+										<li><a href="#gallery-section"><span className="icon-long-arrow-right mr-2"></span>Gallery</a></li>
 									</ul>
 								</div>
 							</div>
