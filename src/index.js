@@ -16,7 +16,7 @@ const root = document.getElementById('root');
 
 const sagaMiddleWare = createSagaMiddleWare();
 const middleWare = applyMiddleware(thunk,logger,sagaMiddleWare);
-const composeEnhancers = (typeof window !== 'undefined' && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) || compose;;
+const composeEnhancers = (typeof window !== 'undefined' && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) || compose;
 const store = createStore(rootReducer,{},composeEnhancers(middleWare));
 sagaMiddleWare.run(rootSaga);
 
