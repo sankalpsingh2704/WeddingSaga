@@ -110,7 +110,8 @@ class Wedding extends React.Component {
 			{ Name: "Bangalore Friends", Type: "Brides Side", Photo: "changu_mangu.jpg" },
 			{ Name: "Renu & Shashank", Type: "Brides Side", Photo: "renu_shashank.jpg" },
 			{ Name: "Akash", Type: "Brides Side", Photo: "akash.jpg" },
-			{ Name: "Sparsh & Mahima", Type: "Brides Side", Photo: "rinshu_rimjhim.jpg" }
+			{ Name: "Sparsh & Mahima", Type: "Brides Side", Photo: "rinshu_rimjhim.jpg" },
+			{ Name: "Shreya & Prateek", Type: "Grooms Side", Photo: "shreya_prateek.jpg" }
 		];
 		return (
 			<section className="ftco-section" id="people-section">
