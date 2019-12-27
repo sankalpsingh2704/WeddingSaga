@@ -111,7 +111,8 @@ class Wedding extends React.Component {
 			{ Name: "Renu & Shashank", Type: "Brides Side", Photo: "renu_shashank.jpg" },
 			{ Name: "Akash", Type: "Brides Side", Photo: "akash.jpg" },
 			{ Name: "Sparsh & Mahima", Type: "Brides Side", Photo: "rinshu_rimjhim.jpg" },
-			{ Name: "Shreya & Prateek", Type: "Grooms Side", Photo: "shreya_prateek.jpg" }
+			{ Name: "Shreya & Pratik", Type: "Grooms Side", Photo: "shreya_prateek.jpg" },
+			{ Name: "Rohit & Roli", Type: "Grooms Side", Photo: "rohit_roli.jpg" }
 		];
 		return (
 			<section className="ftco-section" id="people-section">
@@ -254,7 +255,7 @@ class Wedding extends React.Component {
 				<section id="home" className="video-hero js-fullheight" style={{ "height": "700px", "backgroundImage": `url(${'public/images/bg_1.jpg'})`, "backgroundSize": "cover", "backgroundPosition": "top center" }} data-stellar-background-ratio="0.5">
 					<div className="overlay"></div>
 					<a className="player" data-property="{videoURL:'https://www.youtube.com/watch?v=Mjjw19B7rMk?rel=0&modestbranding=1&autohide=1&showinfo=0&controls=0&showinfo=0',containment:'#home', showControls:false, autoPlay:true, loop:true, mute:true, startAt:0, opacity:1, quality:'default',optimizeDisplay:true}"></a>
-					<audio autoPlay loop src="public/music/kabira.m4a" style={{ visibility: "hidden" }} />
+					<audio autoPlay loop src="public/music/thousand.m4a" style={{ visibility: "hidden" }} />
 					<div className="container">
 						<div className="row js-fullheight justify-content-center d-flex align-items-center">
 							<div className="col-md-12">
@@ -324,7 +325,7 @@ class Wedding extends React.Component {
 											<div className="img" style={{ "backgroundImage": `url(${'public/images/groom.jpg'})` }}></div>
 											<div className="text mt-4 px-4">
 												<h2>Sankalp</h2>
-												<p>A guy from Uttar Pradesh in the search of a girl like me with lots of sharing and caring from him finally, come to conclusion of making together whole life. A kind and humble heart, who always thinks of bringing smile on your face. Love to have him as a partner.</p>
+												<p>A guy from Uttar Pradesh in the search of a girl, with lots of sharing and caring from him finally, come to conclusion of making together whole life. A kind and humble heart, who always thinks of bringing smile on your face. Love to have him as a partner.</p>
 											</div>
 										</div>
 									</div>
@@ -333,7 +334,7 @@ class Wedding extends React.Component {
 											<div className="img" style={{ "backgroundImage": `url(${'public/images/bride.jpg'})` }}></div>
 											<div className="text mt-4 px-4">
 												<h2>Khushbu</h2>
-												<p>A girl from Chattisgarh waiting for a prince like me who is able to feel her, hoping i can walk through the steps for becoming a permanent partner. A very sweet &amp; pure heart like child blown my mind and her alot of trust on me finally made my dream true. Feeling lucky to have such a beautiful girl as my life partner </p>
+												<p>A girl from Chhattisgarh waiting for a prince who is able to feel her, hoping i can walk through the steps for becoming a perfect partner. A very sweet &amp; pure heart like child blown my mind and with lots of trust finally made my dream true. Feeling lucky to have such a beautiful girl as my life partner </p>
 											</div>
 										</div>
 									</div>
