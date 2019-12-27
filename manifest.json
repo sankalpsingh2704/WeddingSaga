@@ -13,9 +13,9 @@
         "sizes": "512x512"
       }
     ],
-    "start_url": "/WeddingSaga/index.html",
+    "start_url": "/WeddingSaga/",
     "background_color": "#f67e7d",
     "display": "standalone",
-    "scope": "/",
+    "scope": "/WeddingSaga/",
     "theme_color": "#f67e7d"
   }
