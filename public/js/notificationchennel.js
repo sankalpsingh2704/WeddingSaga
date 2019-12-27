@@ -5,4 +5,3 @@ function displayNotification(messg) {
         });
     }
 }
-
