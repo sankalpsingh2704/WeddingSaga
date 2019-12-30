@@ -54,7 +54,8 @@ class Wedding extends React.Component {
 			{ Name: "MAHIMA", Message: "God has blessed you with a perfect partner for life. Preserve and Chreish him forever. Let the bond of love grow sweeter and stronger between you!", Position: "Brides Sister", Photo: "rimjhim.jpg" },
 			{ Name: "SHASHANK", Message: "Always keep your life partner happy and support him when he is facing a tough time in his life. May love grows between you two with every year that passes by.", Position: "Brides Brother", Photo: "shashank.jpg" },
 			{ Name: "RAHUL", Message: "She Turned You From The Boy You Were To The Man You Are,So Be Sure She Will Turn You To The Husband You Are Going To Be. Congratulations! ", Position: "Grooms Friend", Photo: "rahul2.jpg" },
-			{ Name: "SOUMYA", Message: "As the days lead to the beginning of a new chapter for you, may each day be renewal of your love for each other. Congratulations on your big day!", Position: "Brides Friend", Photo: "sumi.jpg" }
+			{ Name: "SOUMYA", Message: "As the days lead to the beginning of a new chapter for you, may each day be renewal of your love for each other. Congratulations on your big day!", Position: "Brides Friend", Photo: "sumi.jpg" },
+			{ Name: "ANTIM", Message: "Wishing you a glorious ceremony with an abundance of wonderful memories to follow! My congratulations to you both for finding your life partners.", Position: "Brides Friend", Photo: "antim-dp.jpg" }
 		];
 		return (
 			<section className="ftco-section bg-light" id="greeting-section">
@@ -112,7 +113,8 @@ class Wedding extends React.Component {
 			{ Name: "Akash", Type: "Brides Side", Photo: "akash.jpg" },
 			{ Name: "Sparsh & Mahima", Type: "Brides Side", Photo: "rinshu_rimjhim.jpg" },
 			{ Name: "Shreya & Pratik", Type: "Grooms Side", Photo: "shreya_prateek.jpg" },
-			{ Name: "Rohit & Roli", Type: "Grooms Side", Photo: "rohit_roli.jpg" }
+			{ Name: "Rohit & Roli", Type: "Grooms Side", Photo: "rohit_roli.jpg" },
+			{ Name: "Antim", Type: "Grooms Side", Photo: "antim.jpg" }
 		];
 		return (
 			<section className="ftco-section" id="people-section">
