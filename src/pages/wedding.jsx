@@ -53,7 +53,7 @@ class Wedding extends React.Component {
 			{ Name: "KRITIKA", Message: "I was born lucky because I had a brother like you. You have always been the best person in my life. I know you'll make a good husband too!", Position: "Grooms Sister", Photo: "kittu.jpg" },
 			{ Name: "MAHIMA", Message: "God has blessed you with a perfect partner for life. Preserve and Chreish him forever. Let the bond of love grow sweeter and stronger between you!", Position: "Brides Sister", Photo: "rimjhim.jpg" },
 			{ Name: "SHASHANK", Message: "Always keep your life partner happy and support him when he is facing a tough time in his life. May love grows between you two with every year that passes by.", Position: "Brides Brother", Photo: "shashank.jpg" },
-			{ Name: "RAHUL", Message: "She Turned You From The Boy You Were To The Man You Are,So Be Sure She Will Turn You To The Husband You Are Going To Be. Congratulations! ", Position: "Grooms Friend", Photo: "rahul2.jpg" },
+			{ Name: "RAHUL", Message: "She Turned You From The Boy You Were To The Man You Are,So Be Sure She Will Turn You To The Husband You Are Going To Be. Congratulations! ", Position: "Grooms Friend", Photo: "rahul-dp.jpg" },
 			{ Name: "SOUMYA", Message: "As the days lead to the beginning of a new chapter for you, may each day be renewal of your love for each other. Congratulations on your big day!", Position: "Brides Friend", Photo: "sumi.jpg" },
 			{ Name: "ANTIM", Message: "Wishing you a glorious ceremony with an abundance of wonderful memories to follow! My congratulations to you both for finding your life partners.", Position: "Brides Friend", Photo: "antim-dp.jpg" }
 		];
@@ -101,7 +101,7 @@ class Wedding extends React.Component {
 		const peoples = [
 			{ Name: "Rini, Sakshi, Roli", Type: "Grooms Side", Photo: "rols.jpg" },
 			{ Name: "Akanksha", Type: "Grooms Side", Photo: "akanksha.jpg" },
-			{ Name: "Rahul", Type: "Groomsmen", Photo: "rahul.jpg" },
+			{ Name: "Rahul", Type: "Groomsmen", Photo: "rahul2.jpg" },
 			{ Name: "Ankur", Type: "Groomsmen", Photo: "ankur.jpg" },
 			{ Name: "Keshav & Madhu", Type: "Grooms Side", Photo: "keshav_madhu.jpg" },
 			{ Name: "Anshul, Pari, Kritika", Type: "Grooms Side", Photo: "groomsmen-2.jpg" },
