@@ -8,7 +8,7 @@ module.exports = {
     entry: ['babel-polyfill',path.resolve(__dirname, "src/index.js")],
     output: {
         path: path.resolve(__dirname, "dist"),
-        filename: "my-first-webpack.bundle.js"
+        filename: "[name].bundle.js"
     },
     module: {
         rules: [
