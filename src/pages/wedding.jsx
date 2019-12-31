@@ -55,7 +55,7 @@ class Wedding extends React.Component {
 			{ Name: "SHASHANK", Message: "Always keep your life partner happy and support him when he is facing a tough time in his life. May love grows between you two with every year that passes by.", Position: "Brides Brother", Photo: "shashank.jpg" },
 			{ Name: "RAHUL", Message: "She Turned You From The Boy You Were To The Man You Are,So Be Sure She Will Turn You To The Husband You Are Going To Be. Congratulations! ", Position: "Grooms Friend", Photo: "rahul-dp.jpg" },
 			{ Name: "SOUMYA", Message: "As the days lead to the beginning of a new chapter for you, may each day be renewal of your love for each other. Congratulations on your big day!", Position: "Brides Friend", Photo: "sumi.jpg" },
-			{ Name: "ANTIM", Message: "Wishing you a glorious ceremony with an abundance of wonderful memories to follow! My congratulations to you both for finding your life partners.", Position: "Brides Friend", Photo: "antim-dp.jpg" }
+			{ Name: "ANTIM", Message: "Wishing you a glorious ceremony with an abundance of wonderful memories to follow! My congratulations to you both for finding your life partners.", Position: "Grooms Friend", Photo: "antim-dp.jpg" }
 		];
 		return (
 			<section className="ftco-section bg-light" id="greeting-section">
@@ -257,7 +257,7 @@ class Wedding extends React.Component {
 				<section id="home" className="video-hero js-fullheight" style={{ "height": "700px", "backgroundImage": `url(${'public/images/bg_1.jpg'})`, "backgroundSize": "cover", "backgroundPosition": "top center" }} data-stellar-background-ratio="0.5">
 					<div className="overlay"></div>
 					<a className="player" data-property="{videoURL:'https://www.youtube.com/watch?v=Mjjw19B7rMk?rel=0&modestbranding=1&autohide=1&showinfo=0&controls=0&origin=https://sankalpsingh2704.github.io/WeddingSaga/',containment:'#home', showControls:false, autoPlay:true, loop:true, mute:true, startAt:0, opacity:1, quality:'default',optimizeDisplay:true}"></a>
-					<audio autoPlay loop src="public/music/thousand.mp3" style={{ visibility: "hidden" }} />
+					<audio autoPlay loop src="public/music/thousand.mp3" type="audio/mp3" style={{ visibility: "hidden" }} />
 					<div className="container">
 						<div className="row js-fullheight justify-content-center d-flex align-items-center">
 							<div className="col-md-12">
