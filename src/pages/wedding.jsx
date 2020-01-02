@@ -296,7 +296,7 @@ class Wedding extends React.Component {
 														<h2 className="mb-4">Sankalp <span>&amp;</span> Khushbu</h2>
 														<span className="icon flaticon-rose-variant-outline-with-vines"></span>
 														<span className="subheading">Which is celebration on</span>
-														<p className="time mb-4"><span>March | 2 | 2020</span></p>
+														<p className="time mb-4"><span>March 2 2020</span></p>
 														<span className="subheading mb-5">Starting at 7:00 <br /> in the evening</span>
 														<span className="subheading mb-5">PRAYAG HOLIDAY <br /> IN LUKARGANJ, PRAYAGRAJ, UP</span>
 													</div>
@@ -431,7 +431,7 @@ class Wedding extends React.Component {
 										<h3>Engagement &amp; Sangeet</h3>
 										<p><span>Saturday, 01-March-2020</span><br /><span>06:00 pm onwards</span></p>
 										<p><span>PRAYAG HOLIDAY, LUKARGANJ IN PRAYAGRAJ, UP</span></p>
-										<p><a href="#">+(91)-9451852666</a></p>
+										<p><a href="tel:+919451852666">+(91)-9451852666</a></p>
 										<p><span className="btn-custom" onClick={this.showModal}>See Map</span></p>
 									</div>
 								</div>
@@ -443,7 +443,7 @@ class Wedding extends React.Component {
 										<h3>The Haldi Ceremony</h3>
 										<p><span>Monday, 02-March-2019</span><br /><span>12:00 pm to 02:00 pm</span></p>
 										<p><span>PRAYAG HOLIDAY, LUKARGANJ IN PRAYAGRAJ, UP</span></p>
-										<p><a href="#">+(91)-9451852666</a></p>
+										<p><a href="tel:+919451852666">+(91)-9451852666</a></p>
 										<p><span className="btn-custom" onClick={this.showModal}>See Map</span></p>
 									</div>
 								</div>
@@ -455,7 +455,7 @@ class Wedding extends React.Component {
 										<h3>The Reception &amp; Phere</h3>
 										<p><span>Monday, 02-March-2020</span><br /><span>07:00 pm onwards</span></p>
 										<p><span>PRAYAG HOLIDAY, LUKARGANJ IN PRAYAGRAJ, UP</span></p>
-										<p><a href="#">+(91)-9451852666</a></p>
+										<p><a href="tel:+919451852666">+(91)-9451852666</a></p>
 										<p><span className="btn-custom" onClick={this.showModal}>See Map</span></p>
 									</div>
 								</div>
@@ -533,7 +533,7 @@ class Wedding extends React.Component {
 					<div className="modal-dialog modal-lg">
 						<div className="modal-content">
 							<div className="modal-header">
-								<h4 className="modal-title">Prayag HoliDay</h4>
+								<h4 className="modal-title">Prayag Holiday</h4>
 								<button type="button" className="close" onClick={this.hideModal} data-dismiss="modal">&times;</button>
 							</div>
 							<div className="modal-body">
