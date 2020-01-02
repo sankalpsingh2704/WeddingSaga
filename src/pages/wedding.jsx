@@ -256,8 +256,7 @@ class Wedding extends React.Component {
 				</nav>
 				<section id="home" className="video-hero js-fullheight" style={{ "height": "700px", "backgroundImage": `url(${'public/images/bg_1.jpg'})`, "backgroundSize": "cover", "backgroundPosition": "top center" }} data-stellar-background-ratio="0.5">
 					<div className="overlay"></div>
-					<a className="player" data-property="{videoURL:'https://www.youtube.com/watch?v=Mjjw19B7rMk?rel=0&modestbranding=1&autohide=1&showinfo=0&controls=0&origin=https://sankalpsingh2704.github.io/WeddingSaga/',containment:'#home', showControls:false, autoPlay:true, loop:true, mute:true, startAt:0, opacity:1, quality:'default',optimizeDisplay:true}"></a>
-					<audio autoPlay loop src="public/music/thousand.mp3" type="audio/mp3" style={{ visibility: "hidden" }} />
+					<a className="player" data-property="{videoURL:'https://www.youtube.com/watch?v=bYlTKtD6TxM?rel=0&modestbranding=1&autohide=1&showinfo=0&controls=0&origin=https://sankalpsingh2704.github.io/WeddingSaga/',containment:'#home', showControls:false, autoPlay:true, loop:true, mute:false, startAt:0, opacity:1, quality:'default',optimizeDisplay:true}"></a>
 					<div className="container">
 						<div className="row js-fullheight justify-content-center d-flex align-items-center">
 							<div className="col-md-12">
@@ -296,7 +295,7 @@ class Wedding extends React.Component {
 														<h2 className="mb-4">Sankalp <span>&amp;</span> Khushbu</h2>
 														<span className="icon flaticon-rose-variant-outline-with-vines"></span>
 														<span className="subheading">Which is celebration on</span>
-														<p className="time mb-4"><span>March 2 2020</span></p>
+														<p className="time mb-4"><span>March | 2 | 2020</span></p>
 														<span className="subheading mb-5">Starting at 7:00 <br /> in the evening</span>
 														<span className="subheading mb-5">PRAYAG HOLIDAY <br /> IN LUKARGANJ, PRAYAGRAJ, UP</span>
 													</div>
