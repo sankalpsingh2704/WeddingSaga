@@ -432,7 +432,7 @@ class Wedding extends React.Component {
 									<div className="text text-center">
 										<span className="icon flaticon-wedding-kiss"></span>
 										<h3>Engagement &amp; Sangeet</h3>
-										<p><span>Saturday, 01-March-2020</span><br /><span>06:00 pm onwards</span></p>
+										<p><span>Sunday, 01-March-2020</span><br /><span>06:00 pm onwards</span></p>
 										<p><span>PRAYAG HOLIDAY, LUKARGANJ IN PRAYAGRAJ, UP</span></p>
 										<p><a href="tel:+919451852666">+(91)-9451852666</a></p>
 										<p><span className="btn-custom" onClick={this.showModal}>See Map</span></p>
