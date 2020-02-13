@@ -404,7 +404,7 @@ class Wedding extends React.Component {
 											<div className="overlay overlay-2"></div>
 											<div className="timeline-heading">
 												<span className="date">March 1, 2020</span>
-												<h3 className="timeline-title">We're Engaged</h3>
+												<h3 className="timeline-title">We're Engaging</h3>
 											</div>
 											<div className="timeline-body">
 												<p>Love is just a word until someone comes along and gives it meaning. So this is the day we are waiting to cherish our whole life. A journey from courtship to tying a knot to start a new life .</p>
