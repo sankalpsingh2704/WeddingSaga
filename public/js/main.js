@@ -303,7 +303,7 @@
 
 	function makeTimer() {
 
-		var endTime = new Date("2 March 2020 19:20:00 GMT+05:30");			
+		var endTime = new Date("2 March 2020 00:00:00 GMT+05:30");			
 		endTime = (Date.parse(endTime) / 1000);
 
 		var now = new Date();
@@ -311,7 +311,7 @@
 
 		var timeLeft = endTime - now;
 		if(timeLeft < 0){
-			$("#timer").html("<div class='time'><span>Its Wedding Time !</span></div>");
+			$("#timer").html("<div class='time'><span>Its Wedding Day !</span></div>");
 		}
 		else {
 		var days = Math.floor(timeLeft / 86400); 
@@ -330,7 +330,6 @@
 	}	
 
 }
-
 setInterval(function() { makeTimer(); }, 1000);
 	
 })(jQuery);
