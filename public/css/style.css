@@ -8459,7 +8459,7 @@ h5,
           display: none; } }
     .video-hero .text h1 {
       font-family: "Great Vibes", cursive;
-      font-size: 9vw;
+      font-size: 8vw;
       color: #fff; }
 
 #timer {
@@ -8468,6 +8468,12 @@ h5,
   @media (max-width: 991.98px) {
     #timer {
       width: 90%; } }
+    #timer .eventMessage {
+      width: 100%!important;
+    }
+    #timer .eventMessage span{
+      font-size: 30px!important;
+    }
   #timer .time {
     width: 25%;
     font-size: 40px;

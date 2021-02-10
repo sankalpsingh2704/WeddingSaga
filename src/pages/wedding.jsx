@@ -2,6 +2,7 @@ import React from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { requestSaveRspv } from '../actions/rsvpAction';
+import Timer from './timer.jsx';
 
 class Wedding extends React.Component {
 	constructor(props) {
@@ -264,19 +265,9 @@ class Wedding extends React.Component {
 					<div className="container">
 						<div className="row js-fullheight justify-content-center d-flex align-items-center">
 							<div className="col-md-12">
-								<div className="text text-center">
-									<div className="icon">
-										<span className="flaticon-rose-outline-variant-with-vines-and-leaves"></span>
-									</div>
-									<span className="subheading">The Wedding of</span>
-									<h1>Sankalp &amp; Khushbu</h1>
-									<div id="timer" className="d-flex">
-										<div className="time" id="days"></div>
-										<div className="time pl-3" id="hours"></div>
-										<div className="time pl-3" id="minutes"></div>
-										<div className="time pl-3" id="seconds"></div>
-									</div>
-								</div>
+								{
+									<Timer />
+								}
 							</div>
 						</div>
 					</div>
