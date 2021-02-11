@@ -300,7 +300,6 @@
 
 	function makeTimer() {
 		var eventTime = $("#eventTime").val();
-		//var endTime = new Date("2 March 2021 00:00:00 GMT+05:30");
 		var endTime = new Date(eventTime);			
 		endTime = (Date.parse(endTime) / 1000);
 
